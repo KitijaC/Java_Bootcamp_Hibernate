@@ -3,12 +3,12 @@
         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
     <session-factory>
+        <property name="connection.username">Java_35_36</property>
+        <property name="connection.password">valdemarpils2606</property>
         <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
         <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
         <property name="connection.url">jdbc:mysql://localhost:3306/java_35_36_pet_manager_hibernate?serverTimezone=UTC&amp;createDatabaseIfNotExist=true</property>
-        <property name="connection.username">JAVA_35_36</property>
-        <property name="connection.password">JAVA_35_36</property>
-        <!--<property name="hibernate.hbm2ddl.auto">create-drop</property>-->
         <property name="hibernate.hbm2ddl.auto">update</property>
+        <!--<property name="hibernate.hbm2ddl.auto">create-drop</property>-->
     </session-factory>
 </hibernate-configuration>
