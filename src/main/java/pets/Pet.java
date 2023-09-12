@@ -14,6 +14,9 @@ import java.sql.Timestamp;
 @Entity(name = "pets")
 public class Pet {
     @Id
+    // You can choose how it generates sand assign id using the sstrategy
+    // AUTO, SEQUENCE and TABLE
+    //@GeneratedValue(strategy = GenerationType.AUTO)
     @GeneratedValue
     private Long id;
     private String petName;
@@ -27,5 +30,4 @@ public class Pet {
     private Gender gender;
     private Timestamp createdAt;
     private Timestamp updatedAt;
-
 }
